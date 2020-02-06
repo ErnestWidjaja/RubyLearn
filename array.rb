@@ -90,3 +90,52 @@ puts '========='
 
 new_arr = %w(satu dua tiga)
 puts new_arr
+puts '======='
+
+# acak array dengan shuffle
+arr = [1,2,3,4,5]
+puts "#{arr.shuffle!}" #biar permanent pake !
+puts "#{arr}"
+puts '=========='
+
+# Looping array dengan while
+total = 0
+while total < arr.length do
+    puts arr[total]
+    total += 1
+end
+puts '========'
+
+arr2 = [1,2,3,4,5]
+for item in arr2
+    puts item
+end
+puts '======'
+
+arr2.map do |ind|
+    puts ind
+end
+puts '========='
+
+# Filter 
+# cara tradisional
+array = [60,70,80,95,65]
+arrayBaru = []
+array.each do |item|
+    if item >= 70
+        arrayBaru << item
+    end
+end
+
+puts arrayBaru
+puts '========='
+
+# Select
+arrayBaru = array.select do |item|
+    item < 100
+end
+puts "#{arrayBaru}"
+puts '=========='
+
+# one line select
+puts "#{array.select {|item| item < 100}}"

@@ -20,3 +20,35 @@ puts hash[:nilai]
 hash[:nilai] = 100
 hash[:salary] = 120
 puts hash
+puts '=========='
+
+# menambah dan menghapus element dalam hash
+new_hash = Hash.new
+new_hash[:nama] = 'Ernest'
+puts new_hash
+new_hash['kelas'] = 'A-1'
+puts new_hash
+
+# delete()
+new_hash.delete(:nama)
+puts new_hash
+new_hash[:nama] = 'ErnestLagi'
+puts new_hash
+puts '========'
+
+# looping dalam hash
+loop = {nama: 'Uni', kelas: 'A!', tipe: 'Normal'}
+
+loop.each do |element, value|
+    puts "#{element} ==> #{value}"
+end
+puts '==='
+loop.each do |element|
+    puts "#{element} item"
+end
+puts '==='
+loop.each_key do |key|
+    puts "ambil #{key}"
+end
+puts "#{loop.keys}"
+puts "#{loop.values}"
