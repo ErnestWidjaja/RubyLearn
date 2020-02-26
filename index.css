@@ -1,10 +1,10 @@
 .card{
-    width: 400px;
-    height: 70px;
-    background: blue;
+    width: 100px;
+    height: 100px;
+    background: salmon;
     margin: 20px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .symbol{
@@ -19,22 +19,22 @@
 }
 
 /* menampilkan css sebelum class card */
-.card::before{
+/* .card::before{
     content: '';
     width: 400px;
     height: 10px;
     background-color: black;
     display: block;
-}
+} */
 
 /* menampilkan css setelah class card */
-.card::after{
+/* .card::after{
     content: '';
     width: 400px;
     height: 10px;
     background-color: blue;
     display: block;
-}
+} */
 
 .segitiga{
     border-width: 50px;
@@ -74,9 +74,9 @@
 }
 
 .content{
-    width: 100vh;
+    width: 100%;
     height: 100vh;
-    background: red;
+    background: rgb(194, 194, 169);
     grid-area: content;
 }
 
@@ -89,4 +89,26 @@
 
 body{
     margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .forgrid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas: "head" "content" "side";
+    }
+    .sidebar{
+        width: 100%;
+        height: 50px;
+    }
+    .content{
+        width: 100%;
+        height: calc(100vh - 150px);
+    }
+}
+
+.group{
+    display: flex;
+    justify-content: space-evenly;
 }
