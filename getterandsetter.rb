@@ -119,4 +119,4 @@ mesinku = MesinPencetak.new('Belajar Ruby dan Ruby on Rails')
 puts mesinku.cetak(:blink)
 puts mesinku.cetak(:plain)
 
-puts mesinku.cekformat("tes", :blink) #error harus lewat class
+# puts mesinku.cekformat("tes", :blink) #error harus lewat class

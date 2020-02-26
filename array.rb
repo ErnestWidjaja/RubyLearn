@@ -72,7 +72,7 @@ arr.unshift(0) #tambah dari depan
 arr.unshift(-2,-1)
 puts arr
 puts '========='
-arr.shift(4) #hapus 1 item dari depan koordinat
+arr.shift(4) #hapus 4 item dari depan koordinat
 puts arr
 puts '========='
 

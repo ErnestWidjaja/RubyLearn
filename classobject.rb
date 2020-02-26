@@ -72,3 +72,8 @@ class Print
         @text
     end
 end
+
+# local variable(a-z or _)  
+# instance variable(@) 
+# class variable(@@) 
+# global variable($)

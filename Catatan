@@ -1,0 +1,27 @@
+Kamis 20 Februari 2020	~Class dan Object
+
+~ Jenis variable dalam class
+1. Local Variable (a-z or _) = variable yang hanya bisa diakses di dalam satu method tertentu saja
+2. Instance Variable (@) = variable yang dapat diakses oleh berbagai method di dalam class yang sama
+3. Class Variable (@@) = variable yang diakses oleh berbagai object yang di-instansi-kan dari class yang sama. Variable ini harus dinyatakan di awal, sebelum method initialize ditulis
+4. Global Variable ($) = variable yang diakses oleh seluruh object dan seluruh kelas (diakses oleh apapun didalam program)
+
+
+~Method setter yaitu method yang berfungsi untuk mengeset atau mengubah nilai dari parameter sebuah object
+~Method getter yaitu method yang berfungsi untuk mengambil nilai dari parameter sebuah object
+
+~Module = Kumpulan dari class, method atau constants 
+
+~Terminal
+ls          =>  list untuk melihat posisi kita di folder mana
+cd          =>  CHANGEDIRECTORY (masuk)
+cd..        =>  CHANGEDIRECTORY (keluar)
+mkdir       =>  buat folder baru
+touch       =>  buat file baru
+nano        =>  membuka file
+ruby ___.rb =>  menjalankan file ruby
+
+~
+
+
+
