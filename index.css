@@ -1,0 +1,92 @@
+.card{
+    width: 400px;
+    height: 70px;
+    background: blue;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.symbol{
+    width: 20px;
+    height: 20px;
+}
+
+/* mengambil class symbol didalam class card */
+.card > .symbol{    
+    background: red;
+    border-radius: 50%;
+}
+
+/* menampilkan css sebelum class card */
+.card::before{
+    content: '';
+    width: 400px;
+    height: 10px;
+    background-color: black;
+    display: block;
+}
+
+/* menampilkan css setelah class card */
+.card::after{
+    content: '';
+    width: 400px;
+    height: 10px;
+    background-color: blue;
+    display: block;
+}
+
+.segitiga{
+    border-width: 50px;
+    border-color: transparent transparent orange transparent;
+    border-style: solid;
+    width: 110px;
+}
+
+.segitiga::before{
+    content: '';
+    border-width: 50px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    width: 110px;
+    /* position: absolute; */
+    top: 10px;
+}
+
+.fortex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background: cyan;
+    grid-area: head;
+}
+
+.sidebar{
+    width: 100px;
+    height: 100vh;
+    background: blueviolet;
+    grid-area: side;
+}
+
+.content{
+    width: 100vh;
+    height: 100vh;
+    background: red;
+    grid-area: content;
+}
+
+.forgrid{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "head head" "side content";
+}
+
+body{
+    margin: 0;
+}
