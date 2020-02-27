@@ -1,0 +1,27 @@
+// sass --watch coba.scss:coba.css
+
+$primary-green: green;
+$default_border: 0px;
+$default-pad: 10px;
+$primary-color: blue;
+@for $i from 1 through 10 {
+    $default_border: $i + px;
+}
+
+$primary-text: '';
+@if ($primary-color == blue) {
+    $primary-text: italic;
+}@else{
+    $primary-text: bold
+}
+
+body{
+    background-color: $primary-color!important;
+    padding: $default-pad;
+    margin: $default_border;
+    font-style: $primary-text;
+}
+
+.default-green{
+    background-color: $primary-green;
+}
